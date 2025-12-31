@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Doe | Mobile App Developer</title>
+    <meta name="description" content="Portfolio of John Doe, mobile app developer crafting polished iOS and Android experiences." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="lang-switch" role="group" aria-label="Language switch">
+      <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
+      <button class="lang-btn" type="button" data-lang="fr">FR</button>
+    </div>
+    <div class="glow"></div>
+    <div class="glow glow-alt"></div>
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow" data-i18n data-en="Hi, I’m" data-fr="Bonjour, je suis">Hi, I’m</p>
+        <h1>Mohamed Elgharbaouy</h1>
+        <p class="subtitle" data-i18n data-en="Web Developer" data-fr="Développeur Web">Web Developer</p>
+        <p
+          class="lead"
+          data-i18n-html
+          data-en-html="Building modern, responsive web experiences with clean code, thoughtful UI, and reliable performance. I’m a web developer who builds clean, modern websites and web apps. I work across <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I also deliver AI automation, <strong>Make.com</strong>, <strong>Airtable workflows</strong>, and <strong>no-code</strong> solutions with <strong>Bubble.io</strong>. My focus is on clarity, speed, and reliable results from idea to launch."
+          data-fr-html="Je crée des expériences web modernes et responsives, avec un code propre, un UI soigné et des performances fiables. Je suis un développeur web qui conçoit des sites et des applications modernes. Je travaille avec <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>, et je propose aussi de l'automatisation IA, <strong>Make.com</strong>, des <strong>workflows Airtable</strong> et des solutions <strong>no-code</strong> avec <strong>Bubble.io</strong>. Mon objectif : clarté, rapidité et résultats fiables, de l'idée au lancement."
+        >
+          Building modern, responsive web experiences with clean code, thoughtful UI,
+          and reliable performance. I’m a web developer who builds clean, modern websites
+          and web apps. I work across <strong>HTML</strong>, <strong>CSS</strong>, and
+          <strong>JavaScript</strong>, and I also deliver AI automation, <strong>Make.com</strong>,
+          <strong>Airtable workflows</strong>, and <strong>no-code</strong> solutions with
+          <strong>Bubble.io</strong>. My focus
+          is on clarity, speed, and reliable results from idea to launch.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work" data-i18n data-en="View projects" data-fr="Voir les projets">View projects</a>
+        </div>
+      </section>
+
+      <section id="work" class="section work">
+        <div class="section-header">
+          <h2 data-i18n data-en="Projects" data-fr="Projets">Projects</h2>
+          <p data-i18n data-en="Here are my projects—crafted with care, built for impact, and shipped across platforms." data-fr="Voici mes projets—réalisés avec soin, pensés pour l’impact, et livrés sur toutes les plateformes.">
+            Here are my projects—crafted with care, built for impact, and shipped across platforms.
+          </p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-tag" data-i18n data-en="Rent" data-fr="Location">Rent</div>
+            <h3 data-i18n data-en="Personal project" data-fr="Projet personnel">Personal project</h3>
+            <p data-i18n data-en="Built a rental web app with a clean UI, quick listings, and simple tenant-friendly flows." data-fr="Création d’une application de location avec une interface claire, des annonces rapides et des parcours simples pour les locataires.">
+              Built a rental web app with a clean UI, quick listings, and simple
+              tenant-friendly flows.
+            </p>
+            <div class="work-meta">
+              <span
+                data-i18n-html
+                data-en-html="Technologies: <strong>HTML, CSS, JavaScript</strong>"
+                data-fr-html="Technologies : <strong>HTML, CSS, JavaScript</strong>"
+              >Technologies: <strong>HTML, CSS, JavaScript</strong></span>
+              <span data-i18n data-en="App name: Roomies" data-fr="Nom de l’application : Roomies">App name: Roomies</span>
+            </div>
+            <a class="btn minimal" href="https://storied-gelato-d0bfa8.netlify.app/" target="_blank" rel="noreferrer" data-i18n data-en="View" data-fr="Voir">View</a>
+          </article>
+          <article class="work-card">
+            <div class="work-tag" data-i18n data-en="Agency" data-fr="Agence">Agency</div>
+            <h3>Nowcode It</h3>
+            <p data-i18n data-en="Built a modern agency website with clean UX, fast performance, and conversion-focused sections. I collaborated on 40% of building this website." data-fr="Création d’un site d’agence moderne avec une UX claire, de bonnes performances et des sections orientées conversion. J’ai collaboré à 40 % de la réalisation de ce site.">
+              Built a modern agency website with clean UX, fast performance, and
+              conversion-focused sections. I collaborated on 40% of building this website.
+            </p>
+            <div class="work-meta">
+              <span
+                data-i18n-html
+                data-en-html="Technologies: <strong>Bubble.io, SendGrid API, BoldSign API</strong>"
+                data-fr-html="Technologies : <strong>Bubble.io, SendGrid API, BoldSign API</strong>"
+              >Technologies: <strong>Bubble.io, SendGrid API, BoldSign API</strong></span>
+              <span data-i18n data-en="App name: Nowcode It" data-fr="Nom de l’application : Nowcode It">App name: Nowcode It</span>
+            </div>
+            <a class="btn minimal" href="https://nowcode-it.com/" target="_blank" rel="noreferrer" data-i18n data-en="View" data-fr="Voir">View</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-header">
+          <h2 data-i18n data-en="Technical Expertise" data-fr="Compétences techniques">Technical Expertise</h2>
+          <p data-i18n data-en="Focused on modern web development across frontend, backend, and delivery." data-fr="Axé sur le développement web moderne : frontend, backend et livraison.">
+            Focused on modern web development across frontend, backend, and delivery.
+          </p>
+        </div>
+        <div class="skills-grid modern">
+          <article class="skill-panel">
+            <div class="panel-title">
+              <span class="panel-icon">F</span>
+              <h3 data-i18n data-en="Frontend Development" data-fr="Développement Frontend">Frontend Development</h3>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>HTML</span>
+              </div>
+              <div class="bar blue"><span style="width: 95%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>CSS</span>
+              </div>
+              <div class="bar blue"><span style="width: 95%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>JavaScript</span>
+              </div>
+              <div class="bar blue"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>Bubble.io</span>
+              </div>
+              <div class="bar blue"><span style="width: 85%"></span></div>
+            </div>
+          </article>
+          <article class="skill-panel">
+            <div class="panel-title">
+              <span class="panel-icon">B</span>
+              <h3 data-i18n data-en="Backend & APIs" data-fr="Backend & APIs">Backend & APIs</h3>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>SendGrid API</span>
+              </div>
+              <div class="bar green"><span style="width: 82%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>BoldSign API</span>
+              </div>
+              <div class="bar green"><span style="width: 78%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>Make.com</span>
+              </div>
+              <div class="bar green"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span>MySQL</span>
+              </div>
+              <div class="bar green"><span style="width: 82%"></span></div>
+            </div>
+          </article>
+          <article class="skill-panel">
+            <div class="panel-title">
+              <span class="panel-icon">M</span>
+              <h3 data-i18n data-en="Manual Test" data-fr="Tests manuels">Manual Test</h3>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span data-i18n data-en="Manual Testing" data-fr="Test manuel">Manual Testing</span>
+              </div>
+              <div class="bar purple"><span style="width: 70%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span data-i18n data-en="Bug Reporting" data-fr="Rapport de bugs">Bug Reporting</span>
+              </div>
+              <div class="bar purple"><span style="width: 72%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span data-i18n data-en="Test Cases" data-fr="Cas de test">Test Cases</span>
+              </div>
+              <div class="bar purple"><span style="width: 68%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="row-top">
+                <span data-i18n data-en="UI Checks" data-fr="Vérifications UI">UI Checks</span>
+              </div>
+              <div class="bar purple"><span style="width: 75%"></span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="contact-card">
+          <div>
+            <h2 data-i18n data-en="Contact me" data-fr="Contactez-moi">Contact me</h2>
+            <p data-i18n data-en="Ready to bring your app idea to life? Let’s talk." data-fr="Prêt à concrétiser votre idée ? Discutons-en.">
+              Ready to bring your app idea to life? Let’s talk.
+            </p>
+          </div>
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="sr-only">
+              <label>
+                Don’t fill this out if you’re human:
+                <input name="bot-field" />
+              </label>
+            </p>
+            <label>
+              <span class="label-text" data-i18n data-en="Name" data-fr="Nom">Name</span>
+              <input type="text" name="name" placeholder="Your name" data-placeholder-en="Your name" data-placeholder-fr="Votre nom" />
+            </label>
+            <label>
+              <span class="label-text" data-i18n data-en="Email" data-fr="Email">Email</span>
+              <input type="email" name="email" placeholder="you@email.com" data-placeholder-en="you@email.com" data-placeholder-fr="vous@email.com" />
+            </label>
+            <label>
+              <span class="label-text" data-i18n data-en="Message" data-fr="Message">Message</span>
+              <textarea name="message" rows="4" placeholder="Tell me about your project" data-placeholder-en="Tell me about your project" data-placeholder-fr="Parlez-moi de votre projet"></textarea>
+            </label>
+            <button class="btn primary" type="submit" data-i18n data-en="Send message" data-fr="Envoyer le message">Send message</button>
+          </form>
+          <a class="btn ghost resume" href="./CV/Elgharbaouy-Mohamed-CV.pdf" target="_blank" aria-label="View resume" data-i18n data-en="View resume" data-fr="Voir le CV">View resume</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Mohamed Elgharbaouy.</p>
+      <div class="footer-links">
+        <a class="icon-link linkedin-mark" href="https://www.linkedin.com/in/elgharbaouy-mohamed-897b4b216/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <span class="linkedin-box">in</span>
+          <span class="linkedin-text">LinkedIn</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
