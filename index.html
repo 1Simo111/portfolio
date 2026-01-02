@@ -228,6 +228,29 @@
       </div>
     </footer>
 
+    <div class="popup" id="status-popup" aria-hidden="true">
+      <div class="popup-backdrop" data-popup-close></div>
+      <div
+        class="popup-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="popup-title"
+        aria-describedby="popup-message"
+      >
+        <div class="popup-icon" aria-hidden="true">OK</div>
+        <div class="popup-content">
+          <h3 id="popup-title">Message sent</h3>
+          <p id="popup-message">Thanks for reaching out. I'll get back to you soon.</p>
+        </div>
+        <button class="popup-close" type="button" data-popup-close aria-label="Close">x</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+      window.SUPABASE_URL = "https://levvuzxoxpnctfhirerd.supabase.co";
+      window.SUPABASE_ANON_KEY = "sb_publishable_Xg1Np4p5tU8FLaWtBIb0gQ_oHWVBjMU";
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

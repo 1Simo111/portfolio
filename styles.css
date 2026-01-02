@@ -613,6 +613,101 @@ main {
   gap: 10px;
 }
 
+.popup {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 30;
+}
+
+.popup.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 36, 51, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.popup-card {
+  position: relative;
+  width: min(420px, 90vw);
+  background: linear-gradient(180deg, #ffffff 0%, #f5f6ff 100%);
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  padding: 22px 24px;
+  box-shadow: 0 24px 60px rgba(34, 45, 85, 0.2);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: start;
+  transform: translateY(12px) scale(0.98);
+  transition: transform 0.25s ease;
+}
+
+.popup.is-visible .popup-card {
+  transform: translateY(0) scale(1);
+}
+
+.popup-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  box-shadow: 0 12px 24px rgba(75, 92, 255, 0.25);
+}
+
+.popup.success .popup-icon {
+  background: linear-gradient(135deg, #2cc56b, #6fe6a0);
+  box-shadow: 0 12px 24px rgba(44, 197, 107, 0.25);
+}
+
+.popup.error .popup-icon {
+  background: linear-gradient(135deg, #ff5b5b, #ff9a5b);
+  box-shadow: 0 12px 24px rgba(255, 91, 91, 0.25);
+}
+
+.popup-content h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.popup-content p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.popup-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--muted);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popup-close:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(34, 45, 85, 0.12);
+}
+
 @media (max-width: 860px) {
   .hero {
     padding-top: 72px;
